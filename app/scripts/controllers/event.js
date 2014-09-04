@@ -160,9 +160,8 @@ angular.module('gdgxHubApp')
     });
 
     $http.get("/api/v1/events/tags").success(function(data, status, headers, config) {
-      data
       $scope.map.ready++;
-    }
+    });
 
     $scope.$watch("map.control", function(newValue, oldValue) {
       if(newValue)
@@ -179,7 +178,7 @@ angular.module('gdgxHubApp')
           var eventsData = $scope.eventsData;
           for(var i = 0; i < eventsData.data.length; i++) {
             var marker = eventsData.data[i];
-            marker.setMap(@scope.gmap);
+            marker.setMap($scope.gmap);
           }
         });
       }
