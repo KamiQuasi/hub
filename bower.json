@@ -14,7 +14,7 @@
     "angular-sanitize": "1.2.9",
     "angular-route": "1.2.9",
     "angular-directive.g-signin": "*",
-    "angular-google-maps": "1.0.18",
+    "angular-google-maps": "1.2.1",
     "angular-google-chart": "*",
     "angular-ui-calendar": "*",
     "angular-bootstrap": "0.8.0",
