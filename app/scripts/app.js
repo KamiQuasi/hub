@@ -15,6 +15,7 @@ angular.module('gdgxHubApp', [
   'gdgxHubApp.directives.metrics',
   'gdgxHubApp.directives.d3',
   'gdgxHubApp.directives.moment',
+  'gdgxHubApp.directives.events',
   'directive.g+signin'
 ])
   .config(function ($routeProvider, $locationProvider) {
@@ -52,11 +53,8 @@ angular.module('gdgxHubApp', [
         controller: 'EventCtrl'
       })
       .when('/events/devfest', {
-        templateUrl: 'partials/devfest'
-      })
-      .when('/events/map/:tag', {
-        templateUrl: 'partials/events_map',
-        controller: 'EventsMapCtrl'
+        templateUrl: 'partials/devfest',
+        controller: 'EventsDevfestCtrl'
       })
       .when('/events/heatmap/:year/:month', {
         templateUrl: 'partials/events_heatmap',
